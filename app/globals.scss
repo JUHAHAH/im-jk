@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------- Local Fonts -------------------- */
+/* Galmuri */
+@import url('https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css');
+
+/* Pretendard */
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url('/font/PretendardVariable.woff2') format('woff2-variations');
+}
+/* NeoDunggeunmoPro */
+@font-face {
+  font-family: 'NeoDunggeunmoPro';
+  font-style: normal;
+  src: url('/font/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+}
+/* PFStardust */
+@font-face {
+  font-family: 'PFStardust';
+  font-style: normal;
+  src: url('/font/PFStardust.ttf') format('truetype');
+}
+/* Onesize */
+@font-face {
+  font-family: 'Onesize';
+  font-style: normal;
+  src: url('/font/Onesize.ttf') format('truetype');
+}
+/* Ramche */
+@font-face {
+  font-family: 'Ramche';
+  font-style: normal;
+  src: url('/font/Ramche.ttf') format('truetype');
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  /* -------------------- Color -------------------- */
+  .cred {
+    background: linear-gradient(
+      var(--custom-red) 0%,
+      var(--custom-red-highlight) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+  .cyellow {
+    background: linear-gradient(
+      var(--custom-yellow) 0%,
+      var(--custom-yellow-highlight) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+  .cgreen {
+    background: linear-gradient(
+      var(--custom-green) 0%,
+      var(--custom-green-highlight) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+  .cblue {
+    background: linear-gradient(
+      var(--custom-blue) 0%,
+      var(--custom-blue-highlight) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+  .cwhite {
+    background: linear-gradient(var(--white) 0%, var(--secondary-color-3) 100%);
+    background-clip: text;
+    color: transparent;
+  }
+  /* -------------------- Scroll Bar -------------------- */
+  ::-webkit-scrollbar {
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba($color: #ffffff, $alpha: 0.2);
+    &:hover {
+      background-color: rgba($color: #ffffff, $alpha: 0.6);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
