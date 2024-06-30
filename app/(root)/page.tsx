@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center snap-mandatory snap-y overflow-scroll scroll-smooth">
       <section className="h-screen font-ndgm mb-4 snap-start">
-        <div className="flex flex-col xl:flex-row">
+        <div className="flex flex-col xl:flex-row items-center">
           <Portrait />
           <Main />
         </div>
