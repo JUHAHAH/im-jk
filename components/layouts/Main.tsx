@@ -1,0 +1,106 @@
+'use client';
+
+import EmailIcon from '@/public/img/email.svg';
+import GithubIcon from '@/public/img/stack/github.svg';
+import NotionIcon from '@/public/img/stack/notion.svg';
+import { Typewriter } from 'nextjs-simple-typewriter';
+import { Toaster, toast } from 'sonner';
+import { Button } from '../ui/button';
+
+// confirm 후 클립보드 복사 실행
+const handleCopyButton = () => {
+  setTimeout(async () => {
+    await copyClipboard();
+  }, 500);
+};
+
+// 클립보드 복사 함수
+const copyClipboard = async () => {
+  try {
+    await navigator.clipboard.writeText('juha0227@gmail.com');
+    toast.success('Copied to clipboard!');
+  } catch (err) {
+    alert('실패!');
+  }
+};
+
+const Main = () => {
+  return (
+    <div className="flex flex-col md:flex-row-reverse">
+      <div className="flex items-center leading-[2.8rem] p-4 w-[32rem] md:w-auto border-2 border-red-300">
+        <div className="font-pretendard text-[4.2rem]">
+          <p className="font-bold">
+            Hello! <div className="m-3 md:hidden"></div>
+            I'm JUHA KIM
+          </p>
+          <p className="font-ndgm text-[2.8rem] font-normal mt-2 ml-1">
+            I AM.. &#60;
+            <span className="cgreen">
+              D
+              <Typewriter
+                words={['eveloper', 'auntless', 'esigner', 'ecent']}
+                loop={0}
+                cursor
+                cursorStyle="_"
+                typeSpeed={80}
+                deleteSpeed={40}
+                delaySpeed={2400}
+              />
+            </span>
+            &#62;
+          </p>
+          <div className="font-pretendard text-sm font-thin italic">
+            <p>
+              I might lack in experience but I am eager to learn,{' '}
+              <span className="font-normal">ready</span> to partake in your
+              buisness.
+            </p>
+            <p>
+              I am <span className="font-normal">full-stack developer</span>{' '}
+              specialized in <span className="font-normal">Java</span> or{' '}
+              <span className="font-normal">React</span> projects.
+            </p>
+          </div>
+          <div className="leading-7">
+            <a href="https://github.com/JUHAHAH" className="mr-3">
+              <Button
+                variant="outline"
+                className="outline-1 border-white rounded-full p-1 h-8"
+              >
+                <GithubIcon fill="white" />
+                <span className="m-5">Github</span>
+              </Button>
+            </a>
+            <a
+              href="https://www.notion.so/7d34178ed44448f39e6b5dd6bacc8afa"
+              className="outline-1 border-white rounded-full p-1 pl-2 h-8 mr-3"
+            >
+              <Button
+                variant="outline"
+                className="outline-1 border-white rounded-full p-1 pl-2 h-8"
+              >
+                <NotionIcon fill="white" />
+                <span className="m-5">Notion</span>
+              </Button>
+            </a>
+            <button
+              onClick={handleCopyButton}
+              className="items-center bg-white rounded-full p-1 h-8 max-w-8 hover:max-w-96 inline-flex overflow-hidden w-auto transition-all duration-500"
+            >
+              <span className="pl-[0.1rem]">
+                <EmailIcon width={21} />
+              </span>
+              <span className="text-black whitespace-nowrap font-pretendard font-bold text-sm mx-2">
+                juha0227@gmail.com
+              </span>
+              <Toaster richColors />
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* <Portrait /> */}
+    </div>
+  );
+};
+
+export default Main;

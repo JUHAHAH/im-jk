@@ -1,14 +1,16 @@
-import { Portrait } from '@/components/api/Spline';
+import Main from '@/components/layouts/Main';
+import Portfolio from '@/components/layouts/Portfolio';
 
 const Home = () => {
   return (
-    <div>
-      <div></div>
-      <div className="h-screen font-ndgm">
-        <Portrait />
-        asd
+    <div className="flex flex-col items-center">
+      <div className="font-ndgm mb-4">
+        <Main />
       </div>
-      <div></div>
+
+      <div className="">
+        <Portfolio />
+      </div>
     </div>
   );
 };
