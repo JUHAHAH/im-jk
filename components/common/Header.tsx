@@ -14,8 +14,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-
-      <div className="flex h-24 bg-transparent"></div>
     </div>
   );
 };

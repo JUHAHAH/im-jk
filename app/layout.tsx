@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="dark w-screen overflow-x-hidden checkerboard vignette">
+      <body className="dark w-screen overflow-x-hidden">
         <Header />
         <div>{children}</div>
       </body>

@@ -26,7 +26,7 @@ const copyClipboard = async () => {
 
 const Main = () => {
   return (
-    <div className="flex items-center leading-[2.8rem] p-4 w-[32rem] md:w-auto border-2 border-red-300">
+    <div className="flex items-center leading-[2.8rem] p-4 w-[32rem] md:w-auto">
       <div className="font-pretendard text-[4.2rem]">
         <div className="font-bold">
           Hello! <div className="m-3 md:hidden"></div>
@@ -87,7 +87,7 @@ const Main = () => {
             className="items-center bg-white rounded-full p-1 h-8 max-w-8 hover:max-w-96 inline-flex overflow-hidden w-auto transition-all duration-500"
           >
             <span className="pl-[0.1rem]">
-              <EmailIcon width={21} />
+              <EmailIcon width={20} />
             </span>
             <span className="text-black whitespace-nowrap font-pretendard font-bold text-sm mx-2">
               juha0227@gmail.com

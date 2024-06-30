@@ -18,12 +18,12 @@ import {
 
 const Portfolio = () => {
   return (
-    <div className="border-red-400 max-w-[50rem] p-16">
+    <div className="border-red-400 max-w-[80rem] p-24">
       <Carousel className="flex m-4">
         <CarouselContent>
           {portfolio.map((index) => (
             <Dialog key={index.id}>
-              <CarouselItem>
+              <CarouselItem className="xl:basis-1/2">
                 <DialogTrigger>
                   <Card>
                     <CardContent className="relative aspect-video flex p-6">
