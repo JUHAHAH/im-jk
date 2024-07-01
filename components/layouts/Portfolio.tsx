@@ -49,6 +49,7 @@ const Portfolio = () => {
                       <div dangerouslySetInnerHTML={{ __html: index.detail }} />
                     )}
                     <br />
+                    <br />
                     {index.environment && (
                       <div
                         dangerouslySetInnerHTML={{ __html: index.environment }}

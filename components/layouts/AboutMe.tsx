@@ -1,5 +1,6 @@
 'use client';
 
+import { aboutMe } from '@/constants';
 import { useEffect, useState } from 'react';
 import { Chrono } from 'react-chrono';
 
@@ -38,7 +39,45 @@ const AboutMe = () => {
 
   return (
     <div>
-      <div className="flex w-full mt-6 p-0 relative">
+      <div className="mt-10 pl-6">
+        <div className="text-3xl cgreen font-minecraft mt-5">BIO</div>
+        {aboutMe.bio.map((info) => {
+          return (
+            <div className="flex items-center text-2xl font-ndgm">
+              <span className="w-28">{info.name}</span>
+              <span>:</span>
+              <span className="mb-1 ml-2 font-galmuri14 text-lg">
+                {info.detail}
+              </span>
+            </div>
+          );
+        })}
+        <div className="text-3xl cgreen font-minecraft mt-5">FRONTEND</div>
+        {aboutMe.skills.front.map((info) => {
+          return (
+            <div className="flex items-center text-2xl font-ndgm">
+              <span className="w-36">{info.name}</span>
+              <span>:</span>
+              <span className="mb-1 ml-2 font-galmuri14 text-lg">
+                {info.detail}
+              </span>
+            </div>
+          );
+        })}
+        <div className="text-3xl cgreen font-minecraft mt-5">BACKEND</div>
+        {aboutMe.skills.back.map((info) => {
+          return (
+            <div className="flex items-center text-2xl font-ndgm">
+              <span className="w-36">{info.name}</span>
+              <span>:</span>
+              <span className="mb-1 ml-2 font-galmuri14 text-lg">
+                {info.detail}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+      <div className="flex w-full mt-16 p-0 relative">
         {isClient && (
           <Chrono
             items={items}
@@ -59,18 +98,6 @@ const AboutMe = () => {
             }}
           />
         )}
-      </div>
-      <div className="flex mt-6 p-1">
-        <img
-          className="h-40 mr-4"
-          src="https://github-readme-stats.vercel.app/api?username=JUHAHAH&show_icons=true&theme=dark"
-          alt="Harlok's WakaTime stats"
-        />
-        <img
-          className="h-40"
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact&theme=dark"
-          alt="Harlok's WakaTime stats"
-        />
       </div>
     </div>
   );
