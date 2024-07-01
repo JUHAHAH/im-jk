@@ -68,3 +68,20 @@
 .card-sub-title {
   font-weight: 300 !important;
 }
+
+table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  tbody {
+    border-bottom: 1px solid hsl(212, 13%, 81%, 0.5);
+    tr {
+      border-bottom: 1px solid hsl(212, 13%, 81%, 0.5);
+      td {
+        padding-right: 1rem;
+      }
+    }
+  }
+}

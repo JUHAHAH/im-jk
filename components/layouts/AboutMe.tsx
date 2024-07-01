@@ -60,7 +60,7 @@ const AboutMe = () => {
           />
         )}
       </div>
-      <div className="flex mt-6">
+      <div className="flex mt-6 p-1">
         <img
           className="h-40 mr-4"
           src="https://github-readme-stats.vercel.app/api?username=JUHAHAH&show_icons=true&theme=dark"

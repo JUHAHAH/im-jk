@@ -15,7 +15,7 @@ const Home = () => {
         </div>
       </section>
       {/* ABOUT ME */}
-      <section className="flex flex-col p-24 w-full max-w-[80rem]">
+      <section className="flex flex-col md:p-24 w-full max-w-[80rem]">
         <div className="h-24 invisible snap-start"></div>
         <span className="font-ndgm text-3xl"> &gt; About Me</span>
         <span className="font-galmuri11 text-[.8rem] leading-[0] pl-6 text-zinc-400 tracking-wide">
@@ -24,7 +24,7 @@ const Home = () => {
         <AboutMe />
       </section>
       {/* PORTFOLIO */}
-      <section className="flex flex-col p-24 w-full max-w-[80rem]">
+      <section className="flex flex-col md:p-24 w-full max-w-[80rem]">
         <div className="h-24 invisible snap-start"></div>
         <span className="font-ndgm text-3xl"> &gt; Portfolio</span>
         <span className="font-galmuri11 text-[.8rem] leading-[0] pl-6 text-zinc-400 tracking-wide">

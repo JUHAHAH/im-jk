@@ -23,25 +23,37 @@ const Portfolio = () => {
         <CarouselContent>
           {portfolio.map((index) => (
             <Dialog key={index.id}>
-              <CarouselItem className="xl:basis-1/2">
+              <CarouselItem>
                 <DialogTrigger>
+                  <div className="flex items-center font-galmuri14 text-xl mb-1">
+                    {index.title}
+                    <div className="text-xs font-galmuri11 text-zinc-400 mt-2 pl-2">
+                      {index.date}
+                    </div>
+                  </div>
                   <Card>
-                    <CardContent className="relative aspect-video flex p-6">
+                    <CardContent className="aspect-video flex p-6">
                       <img
                         src={index.images[0]}
                         alt={index.title}
                         className="object-cover"
                       />
-                      <div className="absolute border-red-400 border-2 flex w-90 h-90">
-                        {index.date}
-                      </div>
                     </CardContent>
                   </Card>
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
-                    <DialogTitle>Are you absolutely sure?</DialogTitle>
+                    <DialogTitle>{index.title}</DialogTitle>
                     <DialogDescription>{index.description}</DialogDescription>
+                    {index.detail && (
+                      <div dangerouslySetInnerHTML={{ __html: index.detail }} />
+                    )}
+                    <br />
+                    {index.environment && (
+                      <div
+                        dangerouslySetInnerHTML={{ __html: index.environment }}
+                      />
+                    )}
                   </DialogHeader>
                 </DialogContent>
               </CarouselItem>
