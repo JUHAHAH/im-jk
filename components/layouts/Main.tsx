@@ -60,7 +60,7 @@ const Main = () => {
             <span className="font-normal">React</span> projects.
           </div>
         </div>
-        <div className="mt-1">
+        <div className="mt-1 flex">
           <a href="https://github.com/JUHAHAH" className="mr-4">
             <Button
               variant="outline"
@@ -84,10 +84,10 @@ const Main = () => {
           </a>
           <button
             onClick={handleCopyButton}
-            className="items-center bg-white rounded-full p-1 h-8 max-w-8 hover:max-w-96 inline-flex overflow-hidden w-auto transition-all duration-500"
+            className="items-center mt-[1.2rem] bg-white rounded-full p-1 h-8 max-w-8 hover:max-w-96 inline-flex overflow-hidden w-auto transition-all duration-500"
           >
-            <span className="pl-[0.1rem]">
-              <EmailIcon width={20} />
+            <span className="pl-[0.1rem] md:pl-[0.25rem]">
+              <EmailIcon width={16} />
             </span>
             <span className="text-black whitespace-nowrap font-pretendard font-bold text-sm mx-2">
               juha0227@gmail.com
