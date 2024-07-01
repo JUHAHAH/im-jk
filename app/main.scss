@@ -31,3 +31,40 @@
   // height: 100%;
   // box-shadow: 0 0 50rem hsl(0, 0%, 0%) inset;
 }
+
+.timeline-main-wrapper {
+  min-height: 4rem !important;
+}
+.timeline-item-title {
+  @apply font-ndgm;
+  font-style: normal !important;
+}
+.eMEhba.active {
+  background: none !important;
+  color: white;
+}
+.eMEhba {
+  font-weight: normal !important;
+}
+.timeline-horz-item-container {
+  height: 4rem !important;
+  width: 20rem !important;
+}
+.timeline-main-wrapper {
+  height: 0 !important;
+}
+.timeline-horz-card-wrapper {
+  border: none !important;
+  margin: 0 !important;
+  outline: none !important;
+  padding: 0.2rem;
+}
+.timeline-card-content {
+  @apply font-pretendard;
+}
+.timeline-card-content.active {
+  outline: white solid 1px !important;
+}
+.card-sub-title {
+  font-weight: 300 !important;
+}

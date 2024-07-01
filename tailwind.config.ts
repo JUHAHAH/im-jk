@@ -26,6 +26,7 @@ const config = {
         ramche: 'Ramche',
         galmuri14: 'Galmuri14',
         galmuri11: 'Galmuri11',
+        minecraft: 'Minecraft',
       },
       colors: {
         border: 'hsl(var(--border))',
@@ -89,8 +90,9 @@ const config = {
     },
   },
   plugins: [
-    require('tailwindcss-animate'),
     require('tailwind-gradient-mask-image'),
+    require('tailwindcss-animate'),
+    require('tailwindcss-animated'),
   ],
 } satisfies Config;
 

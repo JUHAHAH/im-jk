@@ -26,9 +26,9 @@ const copyClipboard = async () => {
 
 const Main = () => {
   return (
-    <div className="flex items-center leading-[2.8rem] p-4 w-[32rem] md:w-auto">
+    <div className="flex items-center leading-[2.8rem] p-4 w-[32rem] md:w-auto xl:h-[80vh]">
       <div className="font-pretendard text-[4.2rem]">
-        <div className="font-bold">
+        <div className="font-bold ">
           Hello! <div className="m-3 md:hidden"></div>
           I'm JUHA KIM
         </div>
@@ -60,8 +60,8 @@ const Main = () => {
             <span className="font-normal">React</span> projects.
           </div>
         </div>
-        <div className="leading-7">
-          <a href="https://github.com/JUHAHAH" className="mr-3">
+        <div className="mt-1">
+          <a href="https://github.com/JUHAHAH" className="mr-4">
             <Button
               variant="outline"
               className="outline-1 border-white rounded-full p-1 h-8"
@@ -72,7 +72,7 @@ const Main = () => {
           </a>
           <a
             href="https://www.notion.so/7d34178ed44448f39e6b5dd6bacc8afa"
-            className="outline-1 border-white rounded-full p-1 pl-2 h-8 mr-3"
+            className="mr-4"
           >
             <Button
               variant="outline"

@@ -18,7 +18,7 @@ import {
 
 const Portfolio = () => {
   return (
-    <div className="border-red-400 max-w-[80rem] p-24">
+    <div className="mt-6">
       <Carousel className="flex m-4">
         <CarouselContent>
           {portfolio.map((index) => (

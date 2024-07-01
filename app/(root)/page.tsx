@@ -1,10 +1,12 @@
 import { Portrait } from '@/components/api/Spline';
+import AboutMe from '@/components/layouts/AboutMe';
 import Main from '@/components/layouts/Main';
 import Portfolio from '@/components/layouts/Portfolio';
 
 const Home = () => {
   return (
     <div className="flex flex-col items-center overflow-y-scroll snap-y snap-proximity h-screen">
+      {/* MAIN */}
       <section className="h-screen font-ndgm snap-start">
         <div className="h-24 invisible"></div>
         <div className="flex flex-col xl:flex-row items-center">
@@ -12,15 +14,23 @@ const Home = () => {
           <Main />
         </div>
       </section>
-
-      <section className="snap-start">
-        <div className="h-24 invisible"></div>asd
+      {/* ABOUT ME */}
+      <section className="flex flex-col p-24 w-full max-w-[80rem]">
+        <div className="h-24 invisible snap-start"></div>
+        <span className="font-ndgm text-3xl"> &gt; About Me</span>
+        <span className="font-galmuri11 text-[.8rem] leading-[0] pl-6 text-zinc-400 tracking-wide">
+          My works done so far
+        </span>
+        <AboutMe />
       </section>
-
-      <section className="snap-start">
-        <div className="h-24 invisible"></div>
+      {/* PORTFOLIO */}
+      <section className="flex flex-col p-24 w-full max-w-[80rem]">
+        <div className="h-24 invisible snap-start"></div>
+        <span className="font-ndgm text-3xl"> &gt; Portfolio</span>
+        <span className="font-galmuri11 text-[.8rem] leading-[0] pl-6 text-zinc-400 tracking-wide">
+          My works done so far
+        </span>
         <Portfolio />
-        <p className="h-screen"></p>
       </section>
     </div>
   );
