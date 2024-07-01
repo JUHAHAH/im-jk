@@ -60,7 +60,18 @@ const AboutMe = () => {
           />
         )}
       </div>
-      <div className="mt-6">hahaha</div>
+      <div className="flex mt-6">
+        <img
+          className="h-40 mr-4"
+          src="https://github-readme-stats.vercel.app/api?username=JUHAHAH&show_icons=true&theme=dark"
+          alt="Harlok's WakaTime stats"
+        />
+        <img
+          className="h-40"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact&theme=dark"
+          alt="Harlok's WakaTime stats"
+        />
+      </div>
     </div>
   );
 };
