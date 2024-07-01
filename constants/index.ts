@@ -88,7 +88,7 @@ export const portfolio = [
     environment:
       '<table><thead><tr><th>Environment</th><th></th></tr></thead><tbody><tr><td>OS</td><td>Windows</td></tr><tr><td>Language</td><td>Java, JS, HTML5, CSS3, jQuery, Oracle SQL</td></tr><tr><td>Framework / Library</td><td>Bootstrap5, Spring Boot 3.2.5</td></tr><tr><td>DB</td><td>Oracle XE</td></tr><tr><td>Tool</td><td>Spring Tools 4, Spline 3D, DBeaver</td></tr><tr><td>WAS</td><td>Apache Tomcat</td></tr><tr><td>Collaboration</td><td>Github, Notion, ERD Cloud, Draw.io, Figma</td></tr></tbody></table>',
     images: [
-      'https://previews.dropbox.com/p/thumb/ACUa9J6PS7RQUmJWrqNGyr_LgpNWsZCGwj5Ubz1hpIxZb0uGsquopJegEpGDATOFX7MCKJ47Cq9F_FeBzkhvT67ZoTCx-r2F-L4kS7i7a1odbyKgqkSXUzRxFISA0ZbG1zmBJg6Pnv5VwXcf9dtmJYVuShuA5XruPko2uDIwOuzwSMwcZQV-4nijHGUrpl3AAWKQsD5dAxV8G934fBQYbxv7RLfU2R3a6KXvqnnR_qSrujAr2Cuzkp31a98f7BhBNpLi8YrQ7qXw99Vr71a7VJ8t3zpkDKDPHm1RsQHvbDKyHGeNq2reQvPlRw9ObIL2av8gQjl_RbDKu4rLsQGN5_IA/p.png',
+      'https://www.dropbox.com/scl/fi/v0s7bus7sce2ax7ophp5t/thumbnail.png?rlkey=ndvzs157r4jyxz1tnnmmnuwpl&st=p3ko43o0&raw=1',
     ],
   },
   {
@@ -101,7 +101,7 @@ export const portfolio = [
     environment:
       '<table><thead><tr><th>Environment</th><th></th></tr></thead><tbody><tr><td>OS</td><td>Windows, Linux</td></tr><tr><td>Language</td><td>Java, JS, HTML5, CSS3, jQuery, Oracle SQL</td></tr><tr><td>Framework / Library</td><td>Bootstrap5, Spring Boot 3.2.5, React.js, MUI</td></tr><tr><td>DB</td><td>Oracle XE, Oracle Cloud</td></tr><tr><td>Tool</td><td>Spring Tools 4, Spline 3D, DBeaver, Postman</td></tr><tr><td>WAS</td><td>Apache Tomcat, AWS, Vercel</td></tr><tr><td>API</td><td>Kakao Map, Kakao Mobility, Open AI, Clova OCR, Login(Kakao, Naver, Google)</td></tr><tr><td>Collaboration</td><td>Github, Notion, ERD Cloud, Draw.io, Figma, Discord, Draw.io</td></tr></tbody></table>',
     images: [
-      'https://previews.dropbox.com/p/thumb/ACWne7uYFvIadAigLcZLs6qeIm74gE7lalsVOEqtkLIiRri3oiVtL_87VeyxA4zo3fM8kS_G1Jl4IzZw5p_CtoDyIY9eyqZR4JX0Wf3WycykDE1LS7jC114s6FfiVX9Rk0SGVsC_mY_JBZ0yCXmPF2aV1E4DES7GVlDtTH2Nu4uHdulWEL0RXDpUBJtNtdHPFyW0gYakHU3K6R3qUQGuJEaOrfhj-400THCuEA8UdVQB37GtxBM-KNqg1jrKMbGdqFdtsNxKuj4yC9f4lArxVvsjdxYtf90b-PQRkhCRWiiGOqJHYUlzFScr5k3n6FlasnWaszALXJzC93smyZlqeWiq/p.png',
+      'https://www.dropbox.com/scl/fi/qa5bjiovicxmxs61g0fik/thumbnail.png?rlkey=k8jngab4ysp170b7vm5hhgbnu&st=wm7ytwiz&raw=1',
     ],
   },
 ];
