@@ -123,7 +123,7 @@ const AboutMe = () => {
             items={items}
             disableToolbar={true}
             showAllCardsHorizontal
-            cardWidth={400}
+            cardWidth={380}
             cardHeight={20}
             mode="HORIZONTAL"
             slideShow

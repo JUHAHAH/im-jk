@@ -6,9 +6,9 @@ import Statistics from '@/components/layouts/Statistics';
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center overflow-y-scroll snap-y snap-proximity h-screen">
+    <div className="flex flex-col items-center overflow-y-scroll h-screen">
       {/* MAIN */}
-      <section className="h-screen font-ndgm snap-start">
+      <section className="h-screen font-ndgm snap-start mb-44">
         <div className="h-24 invisible"></div>
         <div className="flex flex-col xl:flex-row items-center">
           <Portrait />
@@ -17,7 +17,7 @@ const Home = () => {
       </section>
       {/* ABOUT ME */}
       <section className="flex flex-col md:p-24 w-full max-w-[80rem]">
-        <div className="h-24 invisible snap-start"></div>
+        {/* <div className="h-24 invisible snap-start"></div> */}
         <span className="font-ndgm text-4xl">&gt; About Me</span>
         <span className="font-galmuri11 text-[.8rem] leading-[0] pl-6 text-zinc-400 tracking-wide">
           My information
@@ -26,7 +26,7 @@ const Home = () => {
       </section>
       {/* PORTFOLIO */}
       <section className="flex flex-col md:p-24 w-full max-w-[80rem]">
-        <div className="h-24 invisible snap-start"></div>
+        {/* <div className="h-24 invisible snap-start"></div> */}
         <span className="font-ndgm text-4xl"> &gt; Portfolio</span>
         <span className="font-galmuri11 text-[.8rem] leading-[0] pl-6 text-zinc-400 tracking-wide">
           My works done so far
