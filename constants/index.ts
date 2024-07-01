@@ -33,16 +33,16 @@ export const aboutMe = {
 };
 
 export const portfolio = [
-  {
-    id: 1,
-    title: 'Cline',
-    description:
-      'Apocalypse themed game delevoped for GYAAR Studio Indie Game Contest',
-    date: '2023.09.17 - 2023.12.03',
-    images: [
-      'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg',
-    ],
-  },
+  // {
+  //   id: 1,
+  //   title: 'Cline',
+  //   description:
+  //     'Apocalypse themed game delevoped for GYAAR Studio Indie Game Contest',
+  //   date: '2023.09.17 - 2023.12.03',
+  //   images: [
+  //     'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg',
+  //   ],
+  // },
   {
     id: 2,
     title: 'Shoesing',
