@@ -3,6 +3,12 @@
 import { aboutMe } from '@/constants';
 import { useEffect, useState } from 'react';
 import { Chrono } from 'react-chrono';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '../ui/tooltip';
 
 const AboutMe = () => {
   const items = [
@@ -44,7 +50,7 @@ const AboutMe = () => {
         {aboutMe.bio.map((info) => {
           return (
             <div className="flex items-center text-2xl font-ndgm">
-              <span className="w-28">{info.name}</span>
+              <span className="w-36">{info.name}</span>
               <span>:</span>
               <span className="mb-1 ml-2 font-galmuri14 text-lg">
                 {info.detail}
@@ -55,25 +61,59 @@ const AboutMe = () => {
         <div className="text-3xl cgreen font-minecraft mt-5">FRONTEND</div>
         {aboutMe.skills.front.map((info) => {
           return (
-            <div className="flex items-center text-2xl font-ndgm">
-              <span className="w-36">{info.name}</span>
-              <span>:</span>
-              <span className="mb-1 ml-2 font-galmuri14 text-lg">
-                {info.detail}
-              </span>
-            </div>
+            <TooltipProvider>
+              <Tooltip delayDuration={0}>
+                <TooltipTrigger className="flex text-start">
+                  <div className="flex text-2xl font-ndgm">
+                    <span className="w-36">{info.name}</span>
+                    <span>:</span>
+                    <span className="w-32 mb-1 ml-2 font-galmuri14 text-lg tracking-[0.2rem]">
+                      {info.level}
+                    </span>
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent side="right" sideOffset={16}>
+                  {info.icons && (
+                    <div className="pb-1 max-w-[30rem]">
+                      <div
+                        className="font-thin text-sm mb-2"
+                        dangerouslySetInnerHTML={{ __html: info.detail }}
+                      />
+                      <div dangerouslySetInnerHTML={{ __html: info.icons }} />
+                    </div>
+                  )}
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           );
         })}
         <div className="text-3xl cgreen font-minecraft mt-5">BACKEND</div>
         {aboutMe.skills.back.map((info) => {
           return (
-            <div className="flex items-center text-2xl font-ndgm">
-              <span className="w-36">{info.name}</span>
-              <span>:</span>
-              <span className="mb-1 ml-2 font-galmuri14 text-lg">
-                {info.detail}
-              </span>
-            </div>
+            <TooltipProvider>
+              <Tooltip delayDuration={0}>
+                <TooltipTrigger className="flex text-start">
+                  <div className="flex text-2xl font-ndgm">
+                    <span className="w-36">{info.name}</span>
+                    <span>:</span>
+                    <span className="w-32 mb-1 ml-2 font-galmuri14 text-lg tracking-[0.2rem]">
+                      {info.level}
+                    </span>
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent side="right" sideOffset={16}>
+                  {info.icons && (
+                    <div className="pb-1 max-w-[30rem]">
+                      <div
+                        className="font-thin text-sm mb-2"
+                        dangerouslySetInnerHTML={{ __html: info.detail }}
+                      />
+                      <div dangerouslySetInnerHTML={{ __html: info.icons }} />
+                    </div>
+                  )}
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           );
         })}
       </div>

@@ -18,7 +18,7 @@ const Home = () => {
       {/* ABOUT ME */}
       <section className="flex flex-col md:p-24 w-full max-w-[80rem]">
         <div className="h-24 invisible snap-start"></div>
-        <span className="font-ndgm text-4xl"> &gt; About Me</span>
+        <span className="font-ndgm text-4xl">&gt; About Me</span>
         <span className="font-galmuri11 text-[.8rem] leading-[0] pl-6 text-zinc-400 tracking-wide">
           My information
         </span>
