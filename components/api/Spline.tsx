@@ -4,7 +4,7 @@ export const Portrait = () => {
   return (
     <div>
       <div className="">
-        <Spline scene="https://prod.spline.design/K4DB9Kg2XkwlerlE/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/qnw6lOnGfN2XXRu1/scene.splinecode" />
       </div>
     </div>
   );
