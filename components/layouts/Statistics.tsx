@@ -30,13 +30,13 @@ const Statistics = () => {
             alt="Harlok's WakaTime stats"
           />
         </CarouselItem>
-        <CarouselItem className="basis-[1cqw/1cqh]">
+        {/* <CarouselItem className="basis-[1cqw/1cqh]">
           <img
             className="h-40 mr-4"
             src="https://cc-prod.scene7.com/is/image/CCProdAuthor/Photography%20Page%20JDI_marquee_tb?$pjpeg$&jpegSize=300&wid=1536"
             alt=""
           />
-        </CarouselItem>
+        </CarouselItem> */}
         <CarouselItem className="basis-[1cqw/1cqh]"></CarouselItem>
       </CarouselContent>
     </Carousel>

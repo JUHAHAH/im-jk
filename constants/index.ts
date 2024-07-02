@@ -56,7 +56,7 @@ export const aboutMe = {
       },
       {
         name: 'Database',
-        level: '★★★',
+        level: '★★★★',
         detail:
           'Experienced SQL based DB like Oracle Cloud DB, Mybatis, JPA. Also tried noSQL based projects using MongoDB, Prisma.',
         icons:
@@ -84,7 +84,7 @@ export const portfolio = [
       'Website mockup aiming to create realistic shoe shopping experience.',
     date: '2024.04.29 - 2024.05.16',
     detail:
-      '<a class="cgreen border-b-[1px]" href="https://www.canva.com/design/DAGJrTFDVSE/wlqfmX8cjZv9VF3PQEi9oA/edit?utm_content=DAGJrTFDVSE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><b>Link to Canva</b></a><br/><span>Web aiming to practice basic dev skills by creating CRUD based online shopping websites such as Adidas or Nike.<br/> Mostly focused on enhancing front-side by implementing 3D features using Spline 3D, also participated in creating administrator page.</span>',
+      '<a class="cgreen" href="https://www.canva.com/design/DAGJrTFDVSE/wlqfmX8cjZv9VF3PQEi9oA/edit?utm_content=DAGJrTFDVSE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><b>Link to Canva</b></a> / <a class="cblue" href="https://github.com/LEECHUNGs/Shoesing"><b>Link to Github</b></a><br/><span>Web aiming to practice basic dev skills by creating CRUD based online shopping websites such as Adidas or Nike.<br/> Mostly focused on enhancing front-side by implementing 3D features using Spline 3D, also participated in creating administrator page.</span>',
     environment:
       '<table><thead><tr><th>Environment</th><th></th></tr></thead><tbody><tr><td>OS</td><td>Windows</td></tr><tr><td>Language</td><td>Java, JS, HTML5, CSS3, jQuery, Oracle SQL</td></tr><tr><td>Framework / Library</td><td>Bootstrap5, Spring Boot 3.2.5</td></tr><tr><td>DB</td><td>Oracle XE</td></tr><tr><td>Tool</td><td>Spring Tools 4, Spline 3D, DBeaver</td></tr><tr><td>WAS</td><td>Apache Tomcat</td></tr><tr><td>Collaboration</td><td>Github, Notion, ERD Cloud, Draw.io, Figma</td></tr></tbody></table>',
     images: [
@@ -97,7 +97,7 @@ export const portfolio = [
     description: 'Web designed for camping site.',
     date: '2024.05.17 - 2024.06.27',
     detail:
-      '<a class="cgreen border-b-[1px]" href="https://www.canva.com/design/DAGJreu6nfU/fefVM12MeNatNprZI6NiqA/edit?utm_content=DAGJreu6nfU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><b>Link to Canva</b></a><br/><span>Car camping supply online store with basic shopping principles (Car/Product Rental, Review Board, Working Payment System).<br/> Mostly focused in minor self-project that recommends camping-focused driving route by combining Open APIs function call logic with basic Kakao Map/ Kakao Mobility API.<br/> Also implemented administrator website, separated from base (Spring) web, using React.js framework.<br />Deployed on Vercel and Amazon Web Service (AWS),</span>',
+      '<a class="cgreen" href="https://www.canva.com/design/DAGJreu6nfU/fefVM12MeNatNprZI6NiqA/edit?utm_content=DAGJreu6nfU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><b>Link to Canva</b></a> / <a class="cblue" href="https://github.com/LEECHUNGs/finalProject"><b>Link to Github</b></a> / <a class="cblue" href="https://github.com/JUHAHAH/wheelingcampManager"><b>Admin System</b></a><br/><span>Car camping supply online store with basic shopping principles (Car/Product Rental, Review Board, Working Payment System).<br/> Mostly focused in minor self-project that recommends camping-focused driving route by combining Open APIs function call logic with basic Kakao Map/ Kakao Mobility API.<br/> Also implemented administrator website, separated from base (Spring) web, using React.js framework.<br />Deployed on Vercel and Amazon Web Service (AWS),</span>',
     environment:
       '<table><thead><tr><th>Environment</th><th></th></tr></thead><tbody><tr><td>OS</td><td>Windows, Linux</td></tr><tr><td>Language</td><td>Java, JS, HTML5, CSS3, jQuery, Oracle SQL</td></tr><tr><td>Framework / Library</td><td>Bootstrap5, Spring Boot 3.2.5, React.js, MUI</td></tr><tr><td>DB</td><td>Oracle XE, Oracle Cloud</td></tr><tr><td>Tool</td><td>Spring Tools 4, Spline 3D, DBeaver, Postman</td></tr><tr><td>WAS</td><td>Apache Tomcat, AWS, Vercel</td></tr><tr><td>API</td><td>Kakao Map, Kakao Mobility, Open AI, Clova OCR, Login(Kakao, Naver, Google)</td></tr><tr><td>Collaboration</td><td>Github, Notion, ERD Cloud, Draw.io, Figma, Discord, Draw.io</td></tr></tbody></table>',
     images: [
