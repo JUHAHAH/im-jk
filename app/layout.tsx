@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className="text-xs md:text-base">
+    <html lang="ko" className="text-xs md:text-base select-none">
       <body className="dark w-screen overflow-x-hidden">
         <Header />
         <div>{children}</div>

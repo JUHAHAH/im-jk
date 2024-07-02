@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center overflow-y-scroll h-screen">
       {/* MAIN */}
-      <section className="h-screen font-ndgm snap-start mb-44">
+      <section className="h-screen font-ndgm snap-start">
         <div className="h-24 invisible"></div>
         <div className="flex flex-col xl:flex-row items-center">
           <Portrait />
