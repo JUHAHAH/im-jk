@@ -58,7 +58,9 @@ const AboutMe = () => {
             </div>
           );
         })}
-        <div className="text-3xl cgreen font-minecraft mt-5">FRONTEND</div>
+        <div className="text-3xl cgreen font-minecraft mt-12 md:mt-5">
+          FRONTEND
+        </div>
         {aboutMe.skills.front.map((info) => {
           return (
             <TooltipProvider>
@@ -72,7 +74,11 @@ const AboutMe = () => {
                     </span>
                   </div>
                 </TooltipTrigger>
-                <TooltipContent side="right" sideOffset={16}>
+                <TooltipContent
+                  className="hidden md:flex"
+                  side="right"
+                  sideOffset={16}
+                >
                   {info.icons && (
                     <div className="pb-1 max-w-[30rem]">
                       <div
@@ -84,10 +90,23 @@ const AboutMe = () => {
                   )}
                 </TooltipContent>
               </Tooltip>
+              <div className="md:hidden mb-4 text-zinc-400">
+                {info.icons && (
+                  <div className="pb-1">
+                    <div
+                      className="font-thin text-sm mb-2"
+                      dangerouslySetInnerHTML={{ __html: info.detail }}
+                    />
+                    <div dangerouslySetInnerHTML={{ __html: info.icons }} />
+                  </div>
+                )}
+              </div>
             </TooltipProvider>
           );
         })}
-        <div className="text-3xl cgreen font-minecraft mt-5">BACKEND</div>
+        <div className="text-3xl cgreen font-minecraft mt-12 md:mt-5">
+          BACKEND
+        </div>
         {aboutMe.skills.back.map((info) => {
           return (
             <TooltipProvider>
@@ -101,7 +120,11 @@ const AboutMe = () => {
                     </span>
                   </div>
                 </TooltipTrigger>
-                <TooltipContent side="right" sideOffset={16}>
+                <TooltipContent
+                  className="hidden md:flex"
+                  side="right"
+                  sideOffset={16}
+                >
                   {info.icons && (
                     <div className="pb-1 max-w-[30rem]">
                       <div
@@ -113,6 +136,17 @@ const AboutMe = () => {
                   )}
                 </TooltipContent>
               </Tooltip>
+              <div className="md:hidden mb-4 text-zinc-400">
+                {info.icons && (
+                  <div className="pb-1">
+                    <div
+                      className="font-thin text-sm mb-2"
+                      dangerouslySetInnerHTML={{ __html: info.detail }}
+                    />
+                    <div dangerouslySetInnerHTML={{ __html: info.icons }} />
+                  </div>
+                )}
+              </div>
             </TooltipProvider>
           );
         })}
