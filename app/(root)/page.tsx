@@ -1,4 +1,5 @@
 import { Portrait } from '@/components/api/Spline';
+import Footer from '@/components/common/Footer';
 import AboutMe from '@/components/layouts/AboutMe';
 import Main from '@/components/layouts/Main';
 import Portfolio from '@/components/layouts/Portfolio';
@@ -8,7 +9,7 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center overflow-y-scroll h-screen">
       {/* MAIN */}
-      <section className="h-screen font-ndgm snap-start">
+      <section className="h-screen font-ndgm snap-start mb-44 md:mb-0">
         <div className="h-24 invisible"></div>
         <div className="flex flex-col xl:flex-row items-center">
           <Portrait />
@@ -34,6 +35,8 @@ const Home = () => {
         <Portfolio />
         <Statistics />
       </section>
+
+      <Footer></Footer>
     </div>
   );
 };
