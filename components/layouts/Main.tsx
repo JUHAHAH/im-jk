@@ -71,7 +71,7 @@ const Main = () => {
             </Button>
           </a>
           <a
-            href="https://www.notion.so/7d34178ed44448f39e6b5dd6bacc8afa"
+            href="https://www.notion.so/0c88cc15d5c3483c9402cd984117fc82?pvs=4"
             className="mr-4"
           >
             <Button
