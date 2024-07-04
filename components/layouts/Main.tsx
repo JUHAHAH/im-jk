@@ -71,7 +71,7 @@ const Main = () => {
             </Button>
           </a>
           <a
-            href="https://www.notion.so/0c88cc15d5c3483c9402cd984117fc82?pvs=4"
+            href="https://speckled-frost-109.notion.site/0c88cc15d5c3483c9402cd984117fc82"
             className="mr-4"
           >
             <Button
